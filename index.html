@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guess my Age
+    </title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="banner">
+      <h1>Guess my Age...</h1>
+    </header>
+    
+    <div class="content">
+        <section id="sliders">
+            <p>
+                <label for="monyhInput">Month Born</label>
+                <input type="range" id="monthInput" min=1 max=12 value=1>
+                <output class="month" id="monthOutput">1</output>      
+            </p>
+             <p>
+                <label for="dayInput">Day Born</label>
+                <input type="range" id="dayInput" min=1 max=31 value=1 oninput="dayOutput()">
+                <output class="day" id="dayOutput">1</output>      
+            </p>
+            <p>
+                <label for="yearInput">Year Born</label>
+                <input type="range" id="yearInput" min=1915 max=2018 value=1915 oninput="yearOutput()">
+                <output class="year" id="yearOutput">1915</output>
+            </P>
+        </section>
+        <section>  
+            <span>Today's Date:&nbsp;&nbsp; </span>
+            <span id="todaysDate"></span>
+            
+            <p>
+                <span>You are approximately:&nbsp;&nbsp;</span>
+                <span id="finalAnswer"></span>
+            </p>
+        </section>
+    </div>
+
+    
+
+<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="js/app.js"></script>    
+</body>
+</html>
+
+
+
+
+
+<!--Roudy below is a way to use the oninput HTML 5 attribute-->
+<!--
+<body>
+
+<p>Write something in the text field to trigger a function.</p>
+
+<input type="text" id="myInput" oninput="myFunction()">
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myInput").value;
+    document.getElementById("demo").innerHTML = "You wrote: " + x;
+}
+</script>
+
+</body>-->

@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+}
+
+#banner {
+    background-color: rgb(175, 38, 38);
+    height: 4em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    position: relative;
+    top: 12rem;
+    background-color: #bfb8f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sliders {
+    width: 400px;
+    border-radius: 4px;
+    border: 1px dotted red;
+   
+}
+#finalAnswer {
+    border: 1px solid pink;
+}
+
+
